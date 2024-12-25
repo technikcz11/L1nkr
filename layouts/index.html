@@ -32,7 +32,7 @@
   {{ range .Site.Params.LinkGroups }}
     <div class="link-group">
       {{ with .name }}
-        <h2 class="group-name">{{ . }}</h2>
+        <h2 class="group-name text-3xl">{{ . }}</h2>
       {{ end }}
       <div class="{{ $gridclass }} {{ $mdgridclass }} mb-auto mt-8 grid justify-center gap-4">
         {{ range .links }}
@@ -63,6 +63,11 @@
                 <span class="tooltip">
                   {{ $tooltip }}
                 </span>
+              {{ end }}
+              {{ if $tooltip }}
+                <label>
+                  {{ strings.FirstUpper $tooltip }}
+                </label>
               {{ end }}
             </a>
           {{ end }}

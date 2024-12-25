@@ -71,6 +71,18 @@
   @apply absolute m-1 h-[120px] w-[120px] rounded-full fill-slate-700 dark:fill-slate-50;
 }
 
+.links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.group-name {
+  color: white;
+  text-align: center;
+  margin-top: 3em;
+}
+
 .tooltip {
   @apply invisible absolute -top-10 animate-bounce
   whitespace-nowrap rounded-md bg-gray-950 px-2 py-1
