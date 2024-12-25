@@ -1,3 +1,3 @@
-module github.com/chrede88/L1nkr
+module github.com/technikcz11/L1nkr
 
 go 1.23.4
