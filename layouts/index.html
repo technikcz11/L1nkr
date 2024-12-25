@@ -40,11 +40,14 @@
           {{ $href := .href }}
           {{ $tooltip := .tooltip }}
           {{ $iconPath := resources.Get (print "icons/" $icon ".svg") }}
-          {{ with $iconPath }}
             <a class="link-with-name" href="{{ $href }}" target="_blank" rel="me noopener noreferrer" aria-label="{{ $icon }}">
               <div class="{{ $mainclass }} {{ if not $monochrome }}link-{{ $icon }}{{ end }} group">
                 <span class="{{ $svgclass }}">
-                  {{ $iconPath.Content | safeHTML }}
+                  {{ if $iconPath }}
+                    {{ $iconPath.Content | safeHTML }}
+                  {{ else }}
+                    <span class="icon-placeholder">?</span>
+                  {{ end }}
                 </span>
                 {{ if $icontext }}
                   <span class="{{ $textclass }}">
@@ -72,7 +75,6 @@
                 </label>
               {{ end }}
             </a>
-          {{ end }}
         {{ end }}
       </div>
     </div>
