@@ -909,6 +909,7 @@ video {
 .link-name {
   color: darkgrey;
   padding-top: .5em;
+  text-align: center;
 }
 
 .tooltip {
