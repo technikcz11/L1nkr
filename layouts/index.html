@@ -34,7 +34,7 @@
       {{ with .name }}
         <h2 class="group-name text-3xl">{{ . }}</h2>
       {{ end }}
-      <div class="{{ $gridclass }} {{ $mdgridclass }} link-with-name mb-auto mt-8 grid justify-center gap-4">
+      <div class="{{ $gridclass }} {{ $mdgridclass }} mb-auto mt-8 grid justify-center gap-4">
         {{ range .links }}
           {{ $icon := .icon }}
           {{ $href := .href }}
