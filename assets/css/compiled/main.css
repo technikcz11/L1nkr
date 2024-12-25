@@ -900,6 +900,16 @@ video {
   margin-top: 3em;
 }
 
+.link-with-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link-name {
+  color: darkgrey
+}
+
 .tooltip {
   visibility: hidden;
   position: absolute;
