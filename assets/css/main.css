@@ -80,7 +80,11 @@
 .group-name {
   color: white;
   text-align: center;
-  margin-top: 3em;
+  margin-top: 2em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  border-top: solid 3px white;
+  border-bottom: solid 3px white;
 }
 
 .link-with-name {
