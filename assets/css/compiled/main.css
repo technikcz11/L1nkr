@@ -907,7 +907,8 @@ video {
 }
 
 .link-name {
-  color: darkgrey
+  color: darkgrey;
+  padding-top: .5em;
 }
 
 .tooltip {
